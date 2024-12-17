@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="/src/page_card.css">
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="/node_modules/particlesjs/dist/particles.min.js"></script> -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/particles.js/particles.js"></script>
+    <script src="/node_modules/flip/dist/jquery.flip.min.js"></script>
+    <script src="/src/card_game.js" defer></script>
+    <title>卡牌游戏</title>
+</head>
+
+<body>
+    <div id="particles-js" style="height: 1000px; position: absolute; z-index: -1;">
+    </div>
+    <div id="content-wrapper">
+
+        <head>
+            <div id="div-nav" style="background-color: black; opacity: 0.4; ">
+                <nav class="nav justify-content-center" style="font-size: 40px; ">
+                    <a class="nav-link active text-white-50" aria-current="page" href="/">首页</a>
+                    <a class="nav-link text-white-50" href="#">卡牌游戏</a>
+                </nav>
+            </div>
+        </head>
+        <main>
+            <div id="main-game" style="width: 800px;  opacity: 0.7; margin: 40px auto;">
+                <div id="game-title" class="text-white" style="padding:20px;background-color: black;">
+                    <h2>已翻牌次数: <span id="fanpai_cishu">0</span></h2>
+                    <h2>点击一张卡牌后，开始计时: <span id="fanpai_jishi"></span></h2>
+                </div>
+
+                <div id="game-content" class="mt-5"
+                    style=" height: 900px; background-image: linear-gradient(pink,rgb(122, 122, 249)); box-shadow: 5px 5px; border-radius: 4px; padding: 20px;">
+
+                    <div id="card-container" class="grid-card">
+
+                        <div id="card-item-1" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-2" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-3" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-4" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+
+
+                        <div id="card-item-5" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-6" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-7" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-8" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+
+
+
+                        <div id="card-item-9" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-10" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-11" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-12" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+
+
+                        <div id="card-item-13" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-14" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-15" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="card-item-16" class="grid-card-item">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <img src="/resource/card/1.jpg" alt="">
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+
+        $(window).on('load', function () {
+            setTimeout(() => {
+                $('#game-content img').show();
+            }, 1000);
+        });
+
+
+        $(document).ready(function () {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80 // 粒子的数量，可以根据需要调整
+                    },
+                    "color": {
+                        "value": ["#ffffff", "#111111", "#222222"] // 设置粒子颜色为暗黑色系的数组，粒子将随机呈现这些颜色
+                    },
+                    "shape": {
+                        "type": "circle" // 粒子的形状，这里设置为圆形，也可改为其他形状如"polygon"等
+                    },
+                    "size": {
+                        "value": 3 // 粒子大小（单位px），可按需修改
+                    },
+                    "line_linked": {
+                        "enable": true, // 是否启用粒子间连线效果，可根据喜好设置为false关闭
+                        "distance": 150, // 连线的距离，可调整该值改变连线长短
+                        "color": "#ffffff", // 连线的颜色，这里设置为深灰色
+                        "opacity": 0.8 // 连线的透明度，取值范围0 - 1
+                    },
+                    "move": {
+                        "enable": true, // 启用粒子运动
+                        "speed": 2 // 粒子运动速度，可以修改该值改变运动快慢
+                    }
+                }
+            });
+        });
+
+
+
+    </script>
+
+
+    <style>
+        #content-wrapper {
+            z-index: 1;
+            /* 设置一个比粒子背景更高的层级，确保内容显示在前面 */
+            padding: 20px;
+            /* 添加一些内边距，使内容看起来更舒适 */
+        }
+
+        body {
+            background-color: #4b4a4a;
+            /* 将整个页面背景设置为黑色 */
+            margin: 0;
+            /* 去除页面默认的外边距 */
+            padding: 0;
+            /* 去除页面默认的内边距 */
+        }
+    </style>
+</body>
+
+
+</html>
