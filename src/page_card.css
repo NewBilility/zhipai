@@ -1,0 +1,35 @@
+.grid-card {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+
+}
+
+.grid-card-item {
+    width: 150px;
+    height: 180px;
+    border: solid 1px white;
+
+}
+
+.grid-card-item:hover {
+    transform: translateY(8px);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.grid-card-item .front {
+    background-color: black;
+    box-shadow: 4px 4px rebeccapurple;
+}
+
+#card-container img {
+    width: 150px;
+    height: 180px;
+    display: none;
+}
+
+#card-container img:hover {
+    cursor: pointer;
+}

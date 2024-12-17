@@ -1,0 +1,22 @@
+{
+  "name": "zhipai",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1",
+    "flip": "github:nnattawat/flip",
+    "jquery": "^3.7.1",
+    "particles.js": "^2.0.0",
+    "particlesjs": "^2.2.3",
+    "video.js": "^8.21.0"
+  }
+}
